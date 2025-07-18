@@ -80,6 +80,16 @@ export type CustomerField = {
   name: string;
 };
 
+export type amountsField = {
+  id: number;
+  name: number;
+};
+
+export type statusField = {
+  id: string;
+  name: string;
+};
+
 export type InvoiceForm = {
   id: string;
   customer_id: string;
