@@ -17,8 +17,8 @@ export default function Form(
     amounts,
     status }: 
     { customers: CustomerField[], 
-      amounts: amountsField[],
-      status: statusField[] }
+      amounts?: amountsField[],
+      status?: statusField[] }
     ) {
   const initialState: State = { message: null, errors: {} };
   const [state, formAction] = useActionState(createInvoice, initialState);

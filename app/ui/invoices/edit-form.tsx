@@ -20,8 +20,8 @@ export default function EditInvoiceForm({
 }: {
   invoice: InvoiceForm;
   customers: CustomerField[],
-  amounts: amountsField[],
-  status: statusField[];
+  amounts?: amountsField[],
+  status?: statusField[];
 }) {
 
   const initialState: State = { message: null, errors: {} };
